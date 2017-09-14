@@ -1,0 +1,57 @@
+---
+title: "9-Condutos Livres"
+author: "dqb"
+date: "13 de setembro de 2017"
+output:
+  beamer_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## 9. Condutos livres
+
+Refere-se ao escoamento dos líquidos em que a pressão referente à carga hidráulica (???\{gama} h ) possui menor valor que a pressão atmosférica. Como exemplo, citam-se os canais de condução de água para irrigação, os sulcos da irrigação por superfície, as galerias urbanas de escoamento de água de chuva, etc. Para o estudo de condutos livres, trabalhar-se-ão com três conceitos em todo momento: Área da seção transversal molhada, perímetro molhado e raio hidráulico. 
+
+Na figura a seguir, a área sombreada refere-se à área molhada e os traços mais reforçados referem-se ao perímetro molhado. A relação entre a área molhada e o perímetro molhado dá-se o nome de raio hidráulico.
+
+
+## 9.1 Vazão ou descarga
+
+Para o cálculo da vazão que um canal transporta utiliza-se a equação da continuidade, eq. (13).
+
+\center Q=A.v
+\center{end}
+
+Aqui, trabalhar-se-ão com 5 formas de canais que estão apresentadas na figura a seguir (retangular, triangular, trapezoidal, circular e parabolóide). Assim, basta calcular a área da forma
+desejada e realizar o produto dessa área pela velocidade de escoamento do canal.
+
+\emph{figuras aqui}
+
+Observando-se a figura a seguir nota-se que a velocidade de escoamento em um conduto livre não é constante em toda secção, o que torna seu cálculo um pouco mais complexo. Assim, para o cálculo da vazão, considera-se que a velocidade possui um valor médio, uma vez que a velocidade de escoamento da água em um conduto livre não é constante ao longo do perfil de profundidade do canal.
+
+\emph{figuras aqui}
+
+Assim, Manning propôs o cálculo da velocidade média de escoamento em condutos livres, por
+meio da equação abaixo.
+
+\center v=1/n.R^2/3 . I^1/2
+\center{end}
+
+em que:
+v : velocidade de escoamento da água no conduto livre, m/s;
+h R : raio hidráulico, m;
+I : Declividade do fundo do canal, m/m;
+n : coeficiente de rugosidade de Manning, s / m1/3. (Tabela 9)
+
+## Tabela 9 - Valores do coeficiente n de Manning
+
+----------------------------------------+------------
+| Material do canal                     | n (s/m^-3) |
+----------------------------------------+------------
+| Alvenaria de pedra bruta              |      0,020 |
+| Alvenaria de tijolos sem revestimento |      0,017 |
+| Alvenaria de tijolos revestida        |      0,012 |
+----------------------------------------+------------
